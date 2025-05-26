@@ -3,8 +3,8 @@ var arrayImagenes = JSON.parse(localStorage.getItem("Imagenes")) || [];
 var btnaddI = document.getElementById("btnaddI");
 
 btnaddI.onclick = () => {
-    let imagenInput = document.getElementById("imagen");
-    let imagen = imagenInput.files[0];
+    let imagenI = document.getElementById("imagen");
+    let imagen = imagenI.files[0];
 
     if (!imagen) {
         Swal.fire({
